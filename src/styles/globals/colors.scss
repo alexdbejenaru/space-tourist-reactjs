@@ -1,0 +1,9 @@
+//Colors
+
+$white: hsl(0, 0%, 96%);
+$black: hsl(0, 0%, 4%);
+
+:root {
+    --primary-bg-color: #{$white};
+    --primary-text-color: #{$black};
+}

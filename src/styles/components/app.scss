@@ -4,15 +4,15 @@
     min-height: 100vh;
     width: 100%;
     background-color: var(--primary-bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    .title {
-        color: var(--primary-text-color);
-    }
-    
-    .text {
-        color: white;
+
+    .content {
+        width: rem(1440px);
+        min-height: 100vh;
+        margin: 0 auto;
+        background-color: lightgray;
+        position: relative;
+        background: url(../../assets/home/background-home-desktop.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }

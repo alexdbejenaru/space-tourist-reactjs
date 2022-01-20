@@ -1,9 +1,8 @@
 const Home = () => {
     return ( 
-        <>
-            <h1>home</h1>
-            <p>hei</p>
-        </>
+        <section className="home-container">
+            
+        </section>
      );
 }
  

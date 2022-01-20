@@ -1,7 +1,7 @@
 const Destination = () => {
     return ( 
         <>
-        <h2>destination</h2>
+
         </>
      );
 }

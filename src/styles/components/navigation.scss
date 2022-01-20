@@ -1,0 +1,61 @@
+@use '../utils/' as *;
+
+.navbar {
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    width: rem(1385px);
+    align-items: center;
+    justify-content: space-between;
+    height: rem(96px);
+    left: rem(55px);
+    top: rem(40px);
+    margin: 0 auto;
+
+    &_dash {
+        position: absolute;
+        width: rem(473px);
+        height: rem(1px);
+        background-color: #FFF;
+        opacity: .25;
+        mix-blend-mode: normal;
+        left: rem(112px);
+        z-index: 10;
+    }
+
+    &_link-list {
+        height: 100%;
+        width: rem(830px);;
+        position: relative;
+
+        &__bg {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: inherit;
+            z-index: 0;
+            background-color: rgba(255, 255, 255, .03);  
+            backdrop-filter: blur(30px);
+        }
+
+        &__links {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: rem(52px);
+            align-items: center;
+            z-index: 100;
+            cursor: pointer;
+        }
+        
+        .nav_links__text {
+            color: white;
+
+            span {
+                margin-right: rem(11px);
+            }
+        }
+    }
+}

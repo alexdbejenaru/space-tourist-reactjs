@@ -6,7 +6,7 @@
     background-color: var(--primary-bg-color);
 
     .content {
-        width: rem(1440px);
+        max-width: rem(1440px);
         min-height: 100vh;
         margin: 0 auto;
         background-color: lightgray;

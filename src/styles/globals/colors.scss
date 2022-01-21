@@ -1,9 +1,11 @@
 //Colors
 
-$white: hsl(0, 0%, 96%);
-$black: hsl(0, 0%, 4%);
+$white: hsl(0, 0%, 100%);
+$gray: hsl(231, 77%, 90%);
+$black: hsl(230, 35%, 7%);
 
 :root {
-    --primary-bg-color: #{$white};
-    --primary-text-color: #{$black};
+    --primary-bg-color: #{$black};
+    --primary-accent-color: #{$gray};
+    --primary-text-color: #{$white};
 }

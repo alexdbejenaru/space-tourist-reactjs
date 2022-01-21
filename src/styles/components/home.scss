@@ -2,4 +2,64 @@
 
 .home-container {
     max-width: rem(1440px);
+    height: 100vh;
+    color: white;
+    padding: rem(165px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_text {
+        max-width: 50%;
+        pointer-events: none;
+
+        &__subtitle {
+            font-family: var(--font-accent);
+            font-weight: var(--font-regular);
+            letter-spacing: rem(4.72px);
+            font-size: rem(28px);
+            color: var(--primary-accent-color);
+        }
+        
+        &__title {
+            font-size: rem(150px);
+            font-weight: var(--font-regular);
+        }
+
+        &__p {
+            font-family: var(--font-text);
+            line-height: rem(32px);
+            color: var(--primary-accent-color);
+        }
+    }
+
+    &_btn {
+        max-width: 50%;
+        position: relative;
+
+        &__item {
+            background-color: white;
+            width: rem(274px);
+            height: rem(274px);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                cursor: pointer;
+                outline: hsla(0, 0%, 100%, .1) solid rem(88px);
+                border: none;
+                box-shadow: rem(2px) rem(2px) rem(5px) var(--primary-bg-color);
+                transition: all 1s;
+            }
+
+            &___text {
+                color: var(--primary-bg-color);
+                font-weight: var(--font-regular);
+                font-size: rem(32px);
+                letter-spacing: rem(2px);
+            }
+        }
+    }
 }

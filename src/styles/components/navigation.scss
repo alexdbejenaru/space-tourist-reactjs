@@ -25,7 +25,7 @@
 
     &_link-list {
         height: 100%;
-        width: rem(830px);;
+        width: rem(830px);
         position: relative;
 
         &__bg {
@@ -47,15 +47,33 @@
             gap: rem(52px);
             align-items: center;
             z-index: 100;
-            cursor: pointer;
+            font-family: var(--font-accent);
+            font-size: rem(16px);
+            font-weight: var(--font-regular);
         }
         
         .nav_links__text {
-            color: white;
+            color: var(--primary-text-color);
+            cursor: pointer;
+            letter-spacing: rem(2.7px);
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                border-bottom: var(--primary-accent-color) solid rem(3px);
+                padding-top: rem(3px);
+            }
 
             span {
                 margin-right: rem(11px);
+                font-weight: bold;
             }
         }
     }
+}
+
+.active {
+    border-bottom: var(--primary-text-color) solid rem(3px);
+    padding-top: rem(3px);
 }

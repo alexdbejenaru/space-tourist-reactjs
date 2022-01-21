@@ -4,28 +4,40 @@
     display: flex;
     position: absolute;
     background-color: transparent;
-    width: rem(1385px);
+    max-width: rem(1385px);
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     height: rem(96px);
     left: rem(55px);
     top: rem(40px);
     margin: 0 auto;
-
+ 
     &_dash {
         position: absolute;
-        width: rem(473px);
+        max-width: rem(473px);
+        min-width: rem(173px);
+        width: 100%;
         height: rem(1px);
         background-color: #FFF;
         opacity: .25;
         mix-blend-mode: normal;
         left: rem(112px);
         z-index: 10;
+
+        @include breakpoint-down(large) {
+            width: 15%;
+        }
+        @include breakpoint-down(medium) {
+            display: none;
+        }
     }
 
     &_link-list {
         height: 100%;
-        width: rem(830px);
+        max-width: rem(830px);
+        min-width: rem(200px);
+        width: 100%;
         position: relative;
 
         &__bg {

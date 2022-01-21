@@ -7,6 +7,7 @@
 
     .content {
         max-width: rem(1440px);
+        width: 100%;
         min-height: 100vh;
         margin: 0 auto;
         background-color: lightgray;
@@ -14,5 +15,13 @@
         background: url(../../assets/home/background-home-desktop.jpg) no-repeat;
         background-size: cover;
         background-position: center;
+
+        @include breakpoint-down(medium) {
+            background: url(../../assets/home/background-home-tablet.jpg) no-repeat;
+        }
+
+        @include breakpoint-down(small) {
+            background: url(../../assets/home/background-home-mobile.jpg) no-repeat;
+        }
     }
 }

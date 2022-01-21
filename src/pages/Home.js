@@ -2,7 +2,7 @@ const Home = () => {
     return ( 
         <section className="home-container">
             <div className="home-container_text">
-                <h2 className="home-container_text__subtitle">SO, YOU WANT TO TRAVEL TO</h2>
+                <h2 className="subtitle">SO, YOU WANT TO TRAVEL TO</h2>
                 <h1 className="home-container_text__title">SPACE</h1>
                 <p className="home-container_text__p">
                     Let’s face it; if you want to go to space, you might as well genuinely go to 

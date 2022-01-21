@@ -5,6 +5,7 @@
     height: 100vh;
     color: white;
     padding: rem(165px);
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,18 +20,10 @@
     @include breakpoint-down(small) {
         background: url(../../assets/home/background-home-mobile.jpg) no-repeat;
     }
-    
+
     &_text {
         max-width: 50%;
         pointer-events: none;
-
-        &__subtitle {
-            font-family: var(--font-accent);
-            font-weight: var(--font-regular);
-            letter-spacing: rem(4.72px);
-            font-size: rem(28px);
-            color: var(--primary-accent-color);
-        }
         
         &__title {
             font-size: rem(150px);

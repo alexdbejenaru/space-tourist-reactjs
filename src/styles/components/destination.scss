@@ -4,7 +4,7 @@
     max-width: rem(1440px);
     width: 100%;
     height: 100vh;
-    color: white;
+    color: var(--primary-text-color);
     padding: rem(165px);
     display: flex;
     align-items: center;
@@ -20,15 +20,32 @@
     @include breakpoint-down(small) {
         background: url(../../assets/destination/background-destination-mobile.jpg) no-repeat;
     }
-    
-    .destination-container_left {
+
+    &_left {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
+        height: 100%;
         width: 50%;
+
+        &__title {
+            font-weight: var(--font-regular);
+            span {
+                margin-right: rem(28px );
+                font-weight: bold;
+                opacity: .25;
+            }
+        }
+
+        &__img {
+            max-width: rem(445px);
+            width: 100%;
+            max-height: rem(445px);
+            height: 100%;
+        }
     }
 
-    .destination-container_right {
+    &_right {
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -36,6 +53,29 @@
         &__buttons {
             display: flex;
             justify-content: space-between;
+            font-family: var(--font-accent);
+            font-size: rem(16px);
+            font-weight: var(--font-regular);
+            height: rem(34px);
+                color: var(--primary-text-color);
+                letter-spacing: rem(2.7px);
+                height: 100%;
+                display: flex;
+                align-items: center;
+                
+                
+                .destination_btn {
+                    background-color: transparent;
+                    border: none;
+                    height: rem(34px);
+                    color: var(--primary-text-color);
+                    
+                    &:hover {
+                        cursor: pointer;
+                        border-bottom: var(--primary-accent-color) solid rem(3px);
+                        padding-top: rem(3px);
+                    }
+            }
         }
     }
 }

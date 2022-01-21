@@ -3,23 +3,22 @@ import { useState } from "react";
 const Destination = ({ data }) => {
 
     const [ destinations, setDestinations ] = useState(data.destinations[0]);
-console.log(data.destinations[0]);
 
     return ( 
         <section className="destination-container">
             <div className="destination-container_left">
-                <h2 className="destination-container_left__title"><span>01</span>PICK YOUR DESTINATION</h2>
-                <img src={ destinations.images.png } alt="Destination" />
+                <h2 className="destination-container_left__title subtitle"><span>01</span>PICK YOUR DESTINATION</h2>
+                <img className="destination-container_left__img" src={ destinations.images.png } alt="Destination" />
             </div>
 
             <div className="destination-container_right">
                 <section className="destination-container_right__buttons">
                     {data.destinations.map((dest, index) => (
-                        <button key={ index } onClick={() => setDestinations(dest)} className="destination_btn">{ dest.name }</button>
+                        <button key={ index } onClick={() => setDestinations(dest)} className="destination_btn">{ dest.name.toUpperCase() }</button>
                         ))}
                 </section>
                 <section className="destination-container_right__info">
-                    <h1 className="title">{destinations.name}</h1>
+                    <h1 className="title">{ destinations.name.toUpperCase() }</h1>
                     <p className="text">{ destinations.description }</p>
                     <div className="separator-dash"></div>
                     <div className="data">

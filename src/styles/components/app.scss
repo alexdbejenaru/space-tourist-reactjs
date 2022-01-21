@@ -10,7 +10,21 @@
         width: 100%;
         min-height: 100vh;
         margin: 0 auto;
-        background-color: lightgray;
         position: relative;
     }
+}
+
+//Components - utils
+
+.subtitle {
+    font-family: var(--font-accent);
+    font-weight: var(--font-regular);
+    letter-spacing: rem(4.72px);
+    font-size: rem(28px);
+    color: var(--primary-accent-color);
+}
+
+.active {
+    border-bottom: var(--primary-text-color) solid rem(3px);
+    padding-top: rem(3px);
 }

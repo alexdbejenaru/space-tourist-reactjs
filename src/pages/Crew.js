@@ -1,8 +1,8 @@
 const Crew = () => {
     return ( 
-        <>
-
-        </>
+        <section className="crew-container">
+            
+        </section>
      );
 }
  

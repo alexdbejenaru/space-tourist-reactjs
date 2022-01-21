@@ -4,6 +4,7 @@ const Destination = ({ data }) => {
 
     const [ destinations, setDestinations ] = useState(data.destinations[0]);
 console.log(data.destinations[0]);
+
     return ( 
         <section className="destination-container">
             <div className="destination-container_left">
@@ -18,17 +19,17 @@ console.log(data.destinations[0]);
                         ))}
                 </section>
                 <section className="destination-container_right__info">
-                    <h1 className="destination-container_right__info___title">{destinations.name}</h1>
-                    <p className="destination-container_right__info__text">{ destinations.description }</p>
+                    <h1 className="title">{destinations.name}</h1>
+                    <p className="text">{ destinations.description }</p>
                     <div className="separator-dash"></div>
-                    <div className="destination-container_right__info___data">
-                        <div className="distance">
-                            <h3 className="distance_title">AVG. DISTANCE</h3>
-                            <p className="distance_number">{ destinations.distance }</p>
+                    <div className="data">
+                        <div className="data_distance">
+                            <h3 className="data_distance__title">AVG. DISTANCE</h3>
+                            <p className="data_distance__number">{ destinations.distance }</p>
                         </div>
-                        <div className="travel">
-                            <h3 className="travel_title">EST. TRAVEL TIME</h3>
-                            <p className="travel_number">{ destinations.travel }</p>
+                        <div className="data_travel">
+                            <h3 className="data_travel__title">EST. TRAVEL TIME</h3>
+                            <p className="data_travel__number">{ destinations.travel }</p>
                         </div>
                     </div>
                 </section>

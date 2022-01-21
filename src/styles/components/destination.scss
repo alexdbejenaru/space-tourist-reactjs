@@ -9,7 +9,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: url(../../assets/destination/background-destination-desktop.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 
+    @include breakpoint-down(medium) {
+        background: url(../../assets/destination/background-destination-tablet.jpg) no-repeat;
+    }
+
+    @include breakpoint-down(small) {
+        background: url(../../assets/destination/background-destination-mobile.jpg) no-repeat;
+    }
+    
     .destination-container_left {
         display: flex;
         flex-direction: column;
@@ -21,7 +32,7 @@
         width: 50%;
         display: flex;
         flex-direction: column;
-        
+
         &__buttons {
             display: flex;
             justify-content: space-between;

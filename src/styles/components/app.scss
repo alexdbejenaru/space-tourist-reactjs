@@ -12,16 +12,5 @@
         margin: 0 auto;
         background-color: lightgray;
         position: relative;
-        background: url(../../assets/home/background-home-desktop.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-
-        @include breakpoint-down(medium) {
-            background: url(../../assets/home/background-home-tablet.jpg) no-repeat;
-        }
-
-        @include breakpoint-down(small) {
-            background: url(../../assets/home/background-home-mobile.jpg) no-repeat;
-        }
     }
 }

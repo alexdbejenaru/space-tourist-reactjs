@@ -8,7 +8,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: url(../../assets/home/background-home-desktop.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 
+    @include breakpoint-down(medium) {
+        background: url(../../assets/home/background-home-tablet.jpg) no-repeat;
+    }
+
+    @include breakpoint-down(small) {
+        background: url(../../assets/home/background-home-mobile.jpg) no-repeat;
+    }
+    
     &_text {
         max-width: 50%;
         pointer-events: none;

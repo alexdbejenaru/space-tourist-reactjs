@@ -4,20 +4,31 @@
     display: flex;
     position: absolute;
     background-color: transparent;
-    max-width: rem(1385px);
+    max-width: rem(1440px);
     width: 100%;
     align-items: center;
     justify-content: space-between;
     height: rem(96px);
-    left: rem(55px);
     top: rem(40px);
     margin: 0 auto;
+
+    @include breakpoint-down(large) {
+        left: initial;
+    }
+
+    @include breakpoint-down(medium) {
+        top: 0;
+        width: 100vw;
+    }
  
+    &_logo {
+        padding-left: rem(39px);
+    }
+
     &_dash {
         position: absolute;
-        max-width: rem(473px);
+        width: rem(473px);
         min-width: rem(173px);
-        width: 100%;
         height: rem(1px);
         background-color: #FFF;
         opacity: .25;
@@ -26,9 +37,6 @@
         z-index: 10;
 
         @include breakpoint-down(large) {
-            width: 15%;
-        }
-        @include breakpoint-down(medium) {
             display: none;
         }
     }
@@ -39,6 +47,10 @@
         min-width: rem(200px);
         width: 100%;
         position: relative;
+
+        @include breakpoint-down(medium) {
+            width: rem(450px);
+        }
 
         &__bg {
             position: absolute;
@@ -62,6 +74,10 @@
             font-family: var(--font-accent);
             font-size: rem(16px);
             font-weight: var(--font-regular);
+
+            @include breakpoint-down(medium) {
+                gap: rem(37px);
+            }
         }
         
         .nav_links__text {
@@ -80,6 +96,10 @@
             span {
                 margin-right: rem(11px);
                 font-weight: bold;
+
+                @include breakpoint-down(medium) {
+                    display: none;
+                }
             }
         }
     }

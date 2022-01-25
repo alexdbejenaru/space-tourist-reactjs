@@ -23,17 +23,20 @@
 
     &_left {
         .crew-members {
-            opacity: 0;
             display: flex;
-
+            
             .crew {
                 display: flex;
             }
         }
         
         .crew-members_hidden {
+            opacity: 0;
+        }
+
+        .crew-members_shown {
             opacity: 1;
-            transition: all 1s;
+            transition: all .5s;
         }
 
         .button-container {

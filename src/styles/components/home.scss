@@ -2,7 +2,8 @@
 
 .home-container {
     max-width: rem(1440px);
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     color: white;
     padding: rem(165px);
     margin: 0 auto;
@@ -12,19 +13,43 @@
     background: url(../../assets/home/background-home-desktop.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-
+    @include breakpoint-down(medium) {
+        padding: rem(165px) rem(50px);
+    }
+    
     @include breakpoint-down(medium) {
         background: url(../../assets/home/background-home-tablet.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        flex-direction: column;
+        text-align: center;
     }
-
+    
     @include breakpoint-down(small) {
         background: url(../../assets/home/background-home-mobile.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     &_text {
         max-width: 50%;
-        pointer-events: none;
+        // pointer-events: none;
         
+        @include breakpoint-down(medium) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 90%;
+        }
+
+        @include breakpoint-down(small) {
+            max-width: 100%;
+        }
+        
+        &_subtitle {
+            font-size: rem(20px);
+        }
+
         &__title {
             font-size: rem(150px);
             font-weight: var(--font-regular);

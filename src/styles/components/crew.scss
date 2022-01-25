@@ -23,11 +23,21 @@
 
     &_left {
         .crew-members {
+            opacity: 0;
             display: flex;
 
             .crew {
                 display: flex;
             }
+        }
+        
+        .crew-members_hidden {
+            opacity: 1;
+            transition: all 1s;
+        }
+
+        .button-container {
+            display: flex;
 
             .crew-button {
                 background-color: transparent;
@@ -38,7 +48,7 @@
                 cursor: pointer;
                 margin-left: 10px;
             }
-
+    
             .active { 
                 background-color: blanchedalmond;
                 transition: all 1s;

@@ -30,11 +30,11 @@ const Destination = ({ data }) => {
                     <div className="data">
                         <div className="data_distance">
                             <h3 className="data_distance__title">AVG. DISTANCE</h3>
-                            <p className="data_distance__number">{ destinations.distance }</p>
+                            <p className="data_distance__number number">{ destinations.distance.toUpperCase() }</p>
                         </div>
                         <div className="data_travel">
                             <h3 className="data_travel__title">EST. TRAVEL TIME</h3>
-                            <p className="data_travel__number">{ destinations.travel }</p>
+                            <p className="data_travel__number number">{ destinations.travel.toUpperCase() }</p>
                         </div>
                     </div>
                 </section>

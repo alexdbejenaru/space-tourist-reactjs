@@ -64,17 +64,22 @@
                 align-items: center;
                 
                 
-                .destination_btn {
-                    background-color: transparent;
-                    border: none;
-                    height: rem(34px);
-                    color: var(--primary-text-color);
-                    
-                    &:hover {
-                        cursor: pointer;
-                        border-bottom: var(--primary-accent-color) solid rem(3px);
-                        padding-top: rem(3px);
-                    }
+            .destination_btn {
+                background-color: transparent;
+                border: none;
+                height: rem(34px);
+                color: var(--primary-text-color);
+                
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: var(--primary-accent-color) solid rem(3px);
+                    padding-top: rem(3px);
+                }
+            }
+
+            .active-button {
+                border-bottom: var(--primary-text-color) solid rem(3px);
+                padding-top: rem(3px);
             }
         }
     }

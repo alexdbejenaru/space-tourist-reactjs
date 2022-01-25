@@ -5,7 +5,7 @@ const Destination = ({ data }) => {
     const [ destinations, setDestinations ] = useState(data.destinations[0]);
     const [ activeButton, setActiveButton ] = useState(data.destinations[0].name);
 
-    const handleChange = (dest) => {
+    const handleClick = (dest) => {
         setDestinations(dest)
         setActiveButton(dest.name);
     }
@@ -20,7 +20,7 @@ const Destination = ({ data }) => {
             <div className="destination-container_right">
                 <section className="destination-container_right__buttons">
                     {data.destinations.map((dest, index) => (
-                        <button key={ index } onClick={() => handleChange(dest)} className={activeButton === dest.name ? 'destination_btn active-button' : 'destination_btn'}>{ dest.name.toUpperCase() }</button>
+                        <button key={ index } onClick={() => handleClick(dest)} className={activeButton === dest.name ? 'destination_btn active-button' : 'destination_btn'}>{ dest.name.toUpperCase() }</button>
                         ))}
                 </section>
                 <section className="destination-container_right__info">

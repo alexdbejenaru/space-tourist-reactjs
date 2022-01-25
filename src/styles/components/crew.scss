@@ -20,4 +20,14 @@
     @include breakpoint-down(small) {
         background: url(../../assets/crew/background-crew-mobile.jpg) no-repeat;
     }
+
+    &_left {
+        .crew-members {
+            display: flex;
+
+            .crew {
+                // display: flex;
+            }
+        }
+    }
 }

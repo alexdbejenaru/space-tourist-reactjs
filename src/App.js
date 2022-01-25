@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route exact path="/"  element={ <Home /> } />
             <Route exact path="/destination" element={ <Destination data={ data }/> } />
-            <Route exact path="/crew" element={ <Crew /> }/>
+            <Route exact path="/crew" element={ <Crew crewData={ data.crew } /> }/>
             <Route exact path="/technology" element={< Technology />  }/>
           </Routes>
         </section>

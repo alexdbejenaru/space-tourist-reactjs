@@ -22,6 +22,12 @@
     }
 
     &_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        position: relative;
+
         .crew-members {
             display: flex;
             
@@ -36,11 +42,13 @@
 
         .crew-members_shown {
             opacity: 1;
-            transition: all .5s;
+            transition: all 1s;
         }
 
         .button-container {
             display: flex;
+            position: fixed;
+            bottom: 20rem;
 
             .crew-button {
                 background-color: transparent;

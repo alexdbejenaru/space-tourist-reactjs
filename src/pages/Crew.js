@@ -9,13 +9,13 @@ const Crew = ({ crewData }) => {
         setChangeMember(true);
         setTimeout(() => {
             setChangeMember(false);
-        }, 500)
+        }, 200)
     }
 
     return ( 
         <section className="crew-container">
             <div className="crew-container_left">
-                <h2 className="destination-container_left__title subtitle"><span>02</span>MEET YOUR CREW</h2>
+                <h2 className="destination-container_left__title crew-container_left__title subtitle"><span>02</span>MEET YOUR CREW</h2>
                     <div className={changeMember ? "crew-members crew-members_hidden" : 'crew-members crew-members_shown'}>
                             <div key={crewMember.name} className="crew_info">
                                 <h2 className="crew_info__role">{ crewMember.role }</h2>

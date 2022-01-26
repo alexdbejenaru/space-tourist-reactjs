@@ -9,7 +9,7 @@ const Crew = ({ crewData }) => {
         setChangeMember(true);
         setTimeout(() => {
             setChangeMember(false);
-        }, 200)
+        }, 500)
     }
 
     return ( 
